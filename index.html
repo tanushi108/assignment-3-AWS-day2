@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 3 - Nginx Hosting</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Nginx Web Hosting</h1>
+        <p>
+            Assignment 3 — Frontend assets served directly from Amazon S3
+        </p>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <!-- This image will be fetched directly from S3 -->
+            <img src="S3_IMAGE_1_URL" alt="Cloud infrastructure">
+
+            <div>
+                <h2>EC2 + Nginx + Amazon S3</h2>
+
+                <p>
+                    This webpage is hosted by Nginx on an EC2 instance.
+                    The images are stored in Amazon S3 and loaded directly
+                    by the browser.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Image Cards -->
+        <section class="cards">
+
+            <article>
+
+                <!-- S3 image -->
+                <img src="S3_IMAGE_2_URL" alt="AWS cloud">
+
+                <h3>Cloud Hosting</h3>
+
+                <p>
+                    Frontend hosting through Nginx on an EC2 instance.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <!-- S3 image -->
+                <img src="S3_IMAGE_3_URL" alt="Storage">
+
+                <h3>S3 Assets</h3>
+
+                <p>
+                    Images are maintained separately in an Amazon S3 bucket.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Assignment 3 | Nginx + EC2 + Amazon S3
+        </p>
+
+    </footer>
+
+</body>
+</html>
