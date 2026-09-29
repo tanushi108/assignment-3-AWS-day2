@@ -1,86 +1,111 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx AWS Webpage</title>
 
-    <title>Assignment 3 - Nginx Hosting</title>
+```
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        color: #222;
+    }
+
+    header {
+        background: #111827;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 8px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 10px;
+        margin: 25px 0;
+    }
+
+    .card p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 20px;
+        text-align: center;
+        background: #111827;
+        color: white;
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Nginx Web Hosting</h1>
-        <p>
-            Assignment 3 — Frontend assets served directly from Amazon S3
-        </p>
-    </header>
+```
+<header>
+    <h1>AWS Nginx Web Hosting</h1>
+    <p>Day 2 Assignment</p>
+</header>
 
-    <main>
+<div class="container">
+    <div class="card">
 
-        <!-- Hero Section -->
-        <section class="hero">
+        <h2>Welcome to Our Webpage</h2>
 
-            <!-- This image will be fetched directly from S3 -->
-            <img src="https://assignment-3-nginx-assets-2026.s3.ap-south-1.amazonaws.com/icons8-cloud-50.png" alt="Cloud infrastructure">
-
-            <div>
-                <h2>EC2 + Nginx + Amazon S3</h2>
-
-                <p>
-                    This webpage is hosted by Nginx on an EC2 instance.
-                    The images are stored in Amazon S3 and loaded directly
-                    by the browser.
-                </p>
-            </div>
-
-        </section>
-
-
-        <!-- Image Cards -->
-        <section class="cards">
-
-            <article>
-
-                <!-- S3 image -->
-                <img src="https://assignment-3-nginx-assets-2026.s3.ap-south-1.amazonaws.com/icons8-aws-48.png" alt="AWS cloud">
-
-                <h3>Cloud Hosting</h3>
-
-                <p>
-                    Frontend hosting through Nginx on an EC2 instance.
-                </p>
-
-            </article>
-
-
-            <article>
-
-                <!-- S3 image -->
-                <img src="https://assignment-3-nginx-assets-2026.s3.ap-south-1.amazonaws.com/icons8-storage-50.png" alt="Storage">
-
-                <h3>S3 Assets</h3>
-
-                <p>
-                    Images are maintained separately in an Amazon S3 bucket.
-                </p>
-
-            </article>
-
-        </section>
-
-    </main>
-
-
-    <footer>
+        <!-- S3 Image -->
+        <img
+            src="https://YOUR-BUCKET-NAME.s3.amazonaws.com/image-1.jpg"
+            alt="Website Image"
+        >
 
         <p>
-            Assignment 3 | Nginx + EC2 + Amazon S3
+            This webpage is hosted using Nginx on AWS EC2.
+            The webpage content is served by Nginx while the image
+            is fetched directly from Amazon S3.
         </p>
 
-    </footer>
+        <p style="margin-top: 15px;">
+            AWS EC2 + Nginx + Amazon S3
+        </p>
+
+    </div>
+</div>
+
+<footer>
+    <p>Day 2 — AWS Nginx Web Hosting</p>
+</footer>
+```
 
 </body>
 </html>
